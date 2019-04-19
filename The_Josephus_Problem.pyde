@@ -11,23 +11,6 @@ def gon(n,R):
         stroke(200)
         strokeWeight(4)
         point(cos(j*a)*R,sin(j*a)*R)
-        
-def dau(n):
-    i=0
-    a=TWO_PI/n
-    v=range(1,n+1)
-    while len(v)!=1:
-        if i+1==len(v):
-            del v[0]
-            stroke(255,0,0)
-            point(r*cos(v[0]*a),r*sin(v[0]*a))
-            i=0
-        else:
-            del v[i+1]
-            stroke(255,0,0)
-            point(r*cos(v[i]*a),r*sin(v[i]*a))
-            i=i+1
-    print v
 
 def setup():
     size(2*r+100,2*r+100)
